@@ -6,7 +6,7 @@
 #define MAX_TEXT 256
 #define MAX_CATEGORY 32
 
-
+//defining structures
 typedef struct  {
     int id;
     char topic [MAX_TEXT];
