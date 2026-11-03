@@ -13,7 +13,7 @@ int main (void)
 
     if (memory_save(&memory, "data/memory.txt"))
         puts("Memory saved. Goodbye!");
-    else
-        puts("Warning: memory could not be saved. Check the data/ folder.");
+        else
+            puts("Warning: memory could not be saved. Check the data/ folder.");
         return 0;
 }

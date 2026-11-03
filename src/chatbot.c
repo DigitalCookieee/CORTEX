@@ -64,7 +64,7 @@ static void delete_fact(Memory *memory, const char *argument)
 
 static void update_fact(Memory *memory, const char *argument)
 {
-    char id_text[32], content[MAX_TEXT];
+    char id_text[32];   
     const char *space = strchr(argument, ' ');
     int id;
     if (!space) {
@@ -132,7 +132,6 @@ void chatbot_run(Memory *memory)
     puts("CORTEX - Offline Memory Assistant");
     puts("Type 'help' to see commands. Type 'quit' to exit.");
     for (;;) {
-        char *argument;
         if (!read_line("\n> ", input, sizeof input)) break;
         if (input[0] == '\0') continue;
         if (strcmp(input, "quit") == 0 || strcmp(input, "exit") == 0) {
